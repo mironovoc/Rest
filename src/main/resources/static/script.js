@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const age = document.querySelector('#age').value;
         const email = document.querySelector('#email').value;
         const password = document.querySelector('#password').value;
-        const roles = Array.from(document.querySelectorAll('input[name="roles"]:checked')).map(input => ({ id: input.value }));
+        const roles = Array.from(document.querySelectorAll('input[name="roles"]:checked')).map(input => ({id: input.value}));
 
         const user = {
             username,
