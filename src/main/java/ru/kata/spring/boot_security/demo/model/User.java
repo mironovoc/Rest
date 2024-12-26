@@ -23,6 +23,7 @@ public class User implements UserDetails {
     private String lastname;
     @Size(min = 5, message = "Не меньше 5 знаков")
     private String password;
+    @ManyToMany(fetch = FetchType.LAZY)
     private Set<Role> roles;
 
     public User() {
