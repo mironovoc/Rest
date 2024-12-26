@@ -16,14 +16,13 @@ public class User implements UserDetails {
     private Long id;
     private Byte age;
     private String email;
-    @Size(min = 2, message = "Не меньше 5 знаков")
+    @Size(min = 5, message = "Не меньше 5 знаков")
     private String username;
     private String firstname;
-    @Size(min = 2, message = "Не меньше 5 знаков")
+    @Size(min = 5, message = "Не меньше 5 знаков")
     private String lastname;
-    @Size(min = 2, message = "Не меньше 5 знаков")
+    @Size(min = 5, message = "Не меньше 5 знаков")
     private String password;
-    @ManyToMany(fetch = FetchType.LAZY)
     private Set<Role> roles;
 
     public User() {
